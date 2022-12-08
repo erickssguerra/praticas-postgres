@@ -1,1 +1,1 @@
-# Pratica-Postgres
+# Práticas-Postgres
