@@ -3,7 +3,7 @@ CREATE TABLE addresses(
 	"street" VARCHAR(50) NOT NULL,
 	"cep" VARCHAR(10) NOT NULL,
 	"number" VARCHAR(10) NOT NULL,
-	"additionalInfo" VARCHAR(50) NOT NULL,
+	"additionalInfo" VARCHAR(50) DEFAULT(NULL),
 	"city" VARCHAR(50) NOT NULL,
 	"state" VARCHAR(2) NOT NULL,
 	"userId" INTEGER NOT NULL REFERENCES "users"("id"),
