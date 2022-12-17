@@ -1,9 +1,5 @@
-SELECT 
-	MAX(users.name) AS writer,
-	COUNT(testimonials.message) AS "testimonialCount"
-FROM testimonials
-JOIN users
-ON users.id = testimonials."writerId"
-WHERE testimonials."writerId" = 435
-GROUP BY (testimonials."writerId")
-;
+SELECT users.name AS writer, COUNT(*) AS "testimonialsCount"
+FROM testimonials t
+JOIN users ON t."writerId" = user.id
+WHERE users.id = 435
+GROUP BY users.id;
