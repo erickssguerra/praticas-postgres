@@ -57,4 +57,3 @@ ALTER TABLE "projects" ADD CONSTRAINT "m_fk0" FOREIGN KEY ("module_id") REFERENC
 ALTER TABLE "projects_students" ADD CONSTRAINT "s_fk0" FOREIGN KEY ("student_id") REFERENCES "students"("id");
 ALTER TABLE "projects_students" ADD CONSTRAINT "g_id_fk0" FOREIGN KEY ("grade_id") REFERENCES "grades"("id");
 ALTER TABLE "projects_students" ADD CONSTRAINT "p_fk0" FOREIGN KEY ("project_id") REFERENCES "projects"("id");
-ALTER TABLE "projects_students" ADD CONSTRAINT "chk_grade0" CHECK ("grade" IN ('Acima das expectativas', 'Dentro das expectativas', 'Abaixo das expectativas'));
