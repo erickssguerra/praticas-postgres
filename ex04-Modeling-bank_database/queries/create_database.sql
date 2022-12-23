@@ -1,4 +1,4 @@
-CREATE DATABASE pratica_modelagem2;
+CREATE DATABASE "bank_database_example";
 
 CREATE TABLE customers(
 	"id" SERIAL PRIMARY KEY,

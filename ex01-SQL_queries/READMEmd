@@ -1,0 +1,13 @@
+### Postgres Exercises - SQL queries
+- **Description**: basic SQL queries exercises, according to a given database;
+``` 
+# USED QUERIES
+
+- SELECT... FROM... WHERE
+- INSERT INTO
+- UPDATE
+- DELETE FROM
+- LIMIT
+- ORDER BY
+- SELECT... (SELECT...) [subqueries] 
+```
